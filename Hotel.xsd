@@ -24,16 +24,19 @@
                     <xs:element name="City" type="xs:string"/>
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
-                    <!-- NearestAirport is required within Address -->
-                    <xs:element name="NearestAirport" type="xs:string"/>
+                    <!-- NearestAirport is converted to an attribute (required) -->
                   </xs:sequence>
+                  <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
 
-              <!-- Optional Rating -->
-              <xs:element name="Rating" type="xs:decimal" minOccurs="0"/>
+              <!-- Rating is now an attribute on Hotel (optional) -->
 
             </xs:sequence>
+
+            <!-- Rating as an attribute on Hotel -->
+            <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+
           </xs:complexType>
         </xs:element>
       </xs:sequence>
