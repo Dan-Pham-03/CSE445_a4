@@ -36,7 +36,7 @@
 
   <!-- ERROR (3): Missing Phone element -->
   <Hotel>
-    <Name>Hyatt Regency Scottsdale Resort and Spa</Name>
+    <Name>Hyatt Regency Scottsdale Resort &amp Spa</Name>
     <!-- Missing Phone elements -->
     <Address>
       <Number>7500</Number>
@@ -51,11 +51,11 @@
 
   <!-- ERROR (4): Address has no closing tag -->
   <Hotel>
-    <Name>Arizona Grand Resort and Spa</Name>
+    <Name>Arizona Gr&amp Resort &amp Spa</Name>
     <Phone>602-438-9000</Phone>
     <Address>
       <Number>8000</Number>
-      <Street>S Arizona Grand Pkwy</Street>
+      <Street>S Arizona Gr&amp Pkwy</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85044</Zip>
