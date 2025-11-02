@@ -51,11 +51,11 @@
 
   <!-- ERROR (4): Address has no closing tag -->
   <Hotel>
-    <Name>Arizona Gr&amp Resort &amp Spa</Name>
+    <Name>Arizona Grand Resort &amp Spa</Name>
     <Phone>602-438-9000</Phone>
     <Address>
       <Number>8000</Number>
-      <Street>S Arizona Gr&amp Pkwy</Street>
+      <Street>S Arizona Grand Pkwy</Street>
       <City>Phoenix</City>
       <State>AZ</State>
       <Zip>85044</Zip>
