@@ -44,19 +44,19 @@
     </Address>
   </Hotel>
 
-  <!-- ERROR (4): Address has no closing tag -->
-  <Hotel Rating="4.3">
-    <Name>Arizona Grand Resort &amp; Spa</Name>
-    <Phone>602-438-9000</Phone>
-    <Address NearestAirport="Sky Harbor">
-      <Number>8000</Number>
-      <Street>S Arizona Grand Pkwy</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85044</Zip>
-    <!-- Missing </Address> closing tag -->
-    <Rating>4.3</Rating>
-  </Hotel>
+  <!-- ERROR (4): Extra element that shouldn't exist -->
+<Hotel Rating="4.3">
+  <Name>Arizona Grand Resort &amp; Spa</Name>
+  <Phone>602-438-9000</Phone>
+  <Address NearestAirport="Sky Harbor">
+    <Number>8000</Number>
+    <Street>S Arizona Grand Pkwy</Street>
+    <City>Phoenix</City>
+    <State>AZ</State>
+    <Zip>85044</Zip>
+    <ExtraElement>This shouldn't be here</ExtraElement> <!-- Schema violation -->
+  </Address>
+</Hotel>
 
   <!-- ERROR (5): Two Name elements -->
   <Hotel Rating="4.3">
